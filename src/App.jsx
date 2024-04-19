@@ -1,4 +1,5 @@
-// import './App.css'
+import './App.css'
+import { Header } from './components/Header'
 import styles from './components/Header.module.css' 
 // import { Dados } from './components/dados'
 
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+    <Header/>
 {/* <div>
 
    <Dados 
@@ -32,11 +34,11 @@ function App() {
     f_pag="Credito 12x"
    />
 </div> */}
-<header className={styles.header}>
-    <button className={styles.btn}>Nova OS</button>
-    <button className={styles.btn}>Cliente </button>
+<menu className={styles.menu}>
+    <button className={styles.btn1}>Nova OS</button>
+    <button className={styles.btn2}>Cliente </button>
 
-</header>
+</menu>
 <body className={styles.body}>
    <div className={styles.title}>
       <h2 className={styles.nome}>Otaviano</h2>

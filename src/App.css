@@ -1,28 +1,25 @@
 #root {
- 
-  margin: 0;
-  padding: 0;
+    --white:#ffffff;
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d8d99;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --gray-500: #00875f;
+
  
   
 }
-
-/* .header{
-  display: flex;
-  justify-content: space-between;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.btn{   
-  padding-left: 10px;
-  margin: 0, auto;    
-}
-
-.detalhes{
-  display: flex;
-  justify-content: space-around;
-}
-
-.status{
-  display: flex;
-  justify-content: space-between;
-  background-color: aliceblue;
-} */
+ body{
+  background: var(--gray-900);
+  color: var(--gray-300);
+  -webkit-font-smothing: antialiased;
+ } 
