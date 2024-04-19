@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+.nome{ 
+    text-align: center;
+}
+
+.detalhes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.status{
+    display: flex;
+    justify-content: space-around;
+    
+}.body{
+    margin: 14px;
+    max-width: 450px;
+    max-height: 450px;
+    background-color: rgb(228, 142, 31);
+    color: black;
+}
