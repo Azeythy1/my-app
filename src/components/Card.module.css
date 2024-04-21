@@ -1,0 +1,43 @@
+.nome{ 
+    text-align: center;
+}
+
+.detalhes{
+    display: flex;
+}
+h4{
+    margin-right: 4px;
+}
+p{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.preco{
+    color: aliceblue;
+    margin: 8px;
+    background-color: rgb(48, 45, 45);
+}
+.cardPreco{
+    display: flex;
+    justify-content: end;
+}
+.cardStatus{
+    display: flex;
+    justify-content: space-between;
+
+    
+} 
+.title{
+color: aliceblue;
+}    
+.card{
+    display: block;
+    border: black;
+    border-style: double;
+    margin: 14px;
+    max-width: 450px;
+    max-height: 450px;
+    background-color: rgb(155, 125, 87);
+    color: rgb(0, 0, 0);
+
+}

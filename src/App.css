@@ -19,7 +19,22 @@
   box-sizing: border-box;
 }
  body{
-  background: var(--gray-900);
-  color: var(--gray-300);
+  display: block;
+  /* background: var(--gray-900);
+  color: var(--gray-300); */
   -webkit-font-smothing: antialiased;
  } 
+ input{
+  margin:14px;
+  width: 350px;
+ }
+ button{
+  padding: 8px;
+  margin-left: 14px;
+  margin-right: 8px;
+  background-color: rgb(155, 125, 87);
+  border-radius: 8px;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+ }

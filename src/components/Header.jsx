@@ -4,9 +4,9 @@ export function Header(){
 return(
 
     <>
-        <header className={styles.header}>
-            Assitencia Eletroinfo
-        </header>
+        <h1 className={styles.header}>
+            Assistencia Eletroinfo
+        </h1>
     </>
 )
 
