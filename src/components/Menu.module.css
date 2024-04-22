@@ -1,6 +1,8 @@
 .menu{
     /* background-color: rgb(221, 218, 218); */
     height: 30px;
+    margin-top: 8px;
+    
  }
 .btn{
      padding: 8px;
