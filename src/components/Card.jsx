@@ -1,31 +1,29 @@
 import styles from './Card.module.css'
-let nome="Flavia"
-let preco=150
 
-export function Card(){
+export function Card(props){
     return(
         <>
     <card className={styles.card}>
         <div className={styles.title}>
-             <h2 className={styles.nome}>{nome ? nome: "Cliente sem nome"}</h2>
+             <h2 className={styles.nome}>{props.nome}</h2>
         </div>
         <div className={styles.detalhes}>
             <h4>Modelo:</h4>
-            <p>Poco X4 Pro 256gb+8gb Preto</p>
+                <p>{props.modelo}</p>
         </div>
         <div className={styles.status}>
            <div className={styles.cardStatus}>
             <div className={styles.cardStatus}>
-                <h4>Tipo:</h4>
-                <p>Assitencia</p>
+                    <h4>Tipo:</h4>
+                <p>{props.tipo}</p>
             </div>
             <div className={styles.cardStatus}>
                 <h4>Status:</h4>
-                <p>Aberta</p>
+                <p>{props.status}</p>
             </div>
            </div> 
            <div className={styles.cardPreco}> 
-            <p className={styles.preco}>R${preco ? preco: "sem preco"}</p>
+            <p className={props.preco}></p>
            </div>
         </div>
     </card>

@@ -9,16 +9,37 @@ function App() {
     <>
     <Header/>
     <Menu/>
-    <body className="body">
+    <div className="body">
      
       <button>Pesquisar</button>
       <input type="search" />
       
-      <Card />
-      <Card />
-      <Card/>
-      <Card/>
-    </body>
+      <Card 
+        nome="Flavia"
+        modelo="Note 13 256+8"
+        tipo="Assitencia"
+        status="Analise"
+        preco="150"
+        />
+      <Card 
+       nome="Flavia"
+       modelo="Note 13 256+8"
+       tipo="Assitencia"
+       status="Analise"
+       preco="150"/>
+      <Card
+       nome="Flavia"
+       modelo="Note 13 256+8"
+       tipo="Assitencia"
+       status="Analise"
+       preco="150"/>
+      <Card
+       nome="Flavia"
+       modelo="Note 13 256+8"
+       tipo="Assitencia"
+       status="Analise"
+       preco="150"/>
+    </div>
 
 
 
