@@ -2,7 +2,8 @@ import'./App.css'
 import { useState } from 'react'
 import { Header } from './components/Header'
 import { Menu } from './components/Menu'
-// import { Card } from './components/Card'
+import { Card } from './components/Card'
+import CheckList from './components/CheckList'
 function App() {
   const [dados, setDados]= useState([
 
@@ -20,7 +21,7 @@ function App() {
               tipo:"assistencia",
               status:"completo",
               preco:"150",
-              id:2
+              id :2 
   
     },
   ]);
@@ -36,14 +37,12 @@ function App() {
       
       {dados.map((dados)=>(
         
-          <div>
-            <p>{dados.nome}</p>
-            <p>{dados.id}</p>
-          </div>  
+        <Card key="id" dados={dados}/>
           
       ))}
     </div>
-  
+      <CheckList/>  
+      <button onClick={setDados}>Atualizar</button>
   </div>
     )
 }
