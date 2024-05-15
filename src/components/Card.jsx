@@ -1,11 +1,12 @@
-// import styles from './Card.module.css'
+import styles from './Card.module.css'
 
 export function Card(dados){
     return(
         <>
-              <div>
-            <p>{dados.nome}</p>
+        <div className={styles.Card}>
+            <h3>{dados.nome}</h3>
             <p>{dados.id}</p>
+            <p>{dados.conteudo}</p>
           </div>  
         </>
     )
