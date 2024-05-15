@@ -1,7 +1,7 @@
 .header{
    text-align: center;
+   color: black;
 }
-
 .perfil{
    width: 7rem;
    height: 5rem;
@@ -12,4 +12,16 @@
 .container{
    margin: 4px;
    border: solid 3px white;
+   justify-content: center;
+   align-self: center;
+   align-items: center;
+   display: flex;
+   background-color: var(--green-200);
+}
+.logo{
+   padding: 0;
+   margin: 0;
+   /* background-color: rgba(253, 228, 0, 0); */
+   height: 70px;
+   width: 110px;
 }

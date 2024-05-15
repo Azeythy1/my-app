@@ -7,25 +7,38 @@ import CheckList from './components/CheckList'
 function App() {
   
   return (
-  <div className='main'>
+  <div className='mainn'>
     <Header/>
+
+    <div className='main'>
+
     <Menu/>
     <div className="body">
      
-      <button>Pesquisar</button>
+      <button onClick={''}>Pesquisar</button>
       <input type="search" />
       
       
         
-        <Card 
-          nome='Rober'
-          conteudo="Não acho isso legal"/>
           
       
     </div>
+    <div className='container'>
       <CheckList/>  
+
       <button >Atualizar</button>
+
+    
+
+    </div>
+<div className='containerPost'>
+        <Card 
+nome='Rober'
+conteudo="Não acho isso legal"/>
+
+</div>
   </div>
+    </div>
     )
 }
 

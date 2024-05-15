@@ -1,15 +1,20 @@
 import styles from './Header.module.css'
-import lua from './img/lua.jpg'
-let nome="Eletroinfo Assitência"
+
 export function Header(){
+  
+
+
 return(
 
+    <>
     <div className={styles.container}>
         <h1 className={styles.header}>
-            {nome}
+            Eletroinfo Outlet
         </h1>
-        <img className={styles.perfil} src={lua}/>
+        <img className={styles.logo} src="../src/img/logo.png" alt="logo" />
     </div>
+    </>
+
 )
 
 }

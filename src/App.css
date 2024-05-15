@@ -7,10 +7,9 @@
     --gray-700: #29292e;
     --gray-800: #202024;
     --gray-900: #121214;
-
-    --gray-500: #00875f;
-
- 
+    --green-200: #11ca93;
+    --green-300: #34bd78;
+    --green-500: #00875f;
   
 }
 *{
@@ -32,12 +31,13 @@
   padding: 8px;
   margin-left: 14px;
   margin-right: 8px;
-  background-color: rgb(155, 125, 87);
+  background-color: var(--green-200);
   border-radius: 8px;
   border: none;
   color: rgb(0, 0, 0);
   font-weight: bolder;
  }
+
  .main{
   display: flex;
   flex-direction: column;
@@ -45,5 +45,15 @@
   padding: 8px;
 
   
+ }
+ .containerPost{
+  display: flex;
+  justify-content: center;
+  background-color: #323238;
+  width: 400px;
+  height: 260px;
+  border:solid 2px var(--green-300);
+  border-radius: 9px;
+
 
  }

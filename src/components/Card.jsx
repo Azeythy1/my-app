@@ -4,9 +4,9 @@ export function Card(dados){
     return(
         <>
         <div className={styles.Card}>
-            <h3>{dados.nome}</h3>
+            <h3 className='Dnome'>{dados.nome}</h3>
             <p>{dados.id}</p>
-            <p>{dados.conteudo}</p>
+            <p className='Dconteudo'>{dados.conteudo}</p>
           </div>  
         </>
     )

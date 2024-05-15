@@ -3,8 +3,9 @@
 const CheckList = () => {
   return (
     <div>
+      
         <form action="">
-            <input type="text" />
+           
             <select name="tipo" id="">
                 <option value="">Assistência</option>
                 <option value="">Garantia</option>

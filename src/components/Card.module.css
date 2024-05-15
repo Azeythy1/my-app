@@ -38,7 +38,12 @@ color: aliceblue;
     margin: 14px;
     max-width: 260px;
     max-height: 450px;
-    background-color: rgb(155, 125, 87);
+    background-color:rgb(253, 228, 0);
     color: rgb(0, 0, 0);
 
+}
+
+.Dnome{
+    width: 480px;
+    background-color: var(--gray-200);
 }
