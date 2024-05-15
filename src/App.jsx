@@ -32,7 +32,7 @@ function App() {
     <Menu/>
     <div className="body">
      
-      <button>Pesquisar</button>
+      <button onClick={''}>Pesquisar</button>
       <input type="search" />
       
       {dados.map((dados)=>(
@@ -41,8 +41,11 @@ function App() {
           
       ))}
     </div>
+    <div className='container'>
       <CheckList/>  
       <button onClick={setDados}>Atualizar</button>
+
+    </div>
   </div>
     )
 }
