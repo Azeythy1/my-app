@@ -7,20 +7,17 @@
  }
  .container{
     display: flex;
-    background-color: rgb(70, 71, 71);
-    width: auto;
+    flex-wrap: wrap;
+    background-color: var(--green-10);
     height: 50px;
-    align-items: center;
-    justify-content: space-around;
-    justify-self: center;
+
  }
 .btn{
      padding: 8px;
      margin-left: 14px;
      margin-right: 8px;
-     background-color: var(--green-200);
      border-radius: 8px;
-     border: none;
+     border: 1px solid black;
      color: rgb(0, 0, 0);
      font-weight: bolder;
       

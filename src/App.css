@@ -7,6 +7,7 @@
     --gray-700: #29292e;
     --gray-800: #202024;
     --gray-900: #121214;
+    --green-10:  rgb(184, 228, 228);
     --green-100: rgb(35, 107, 107, 0.664);
     --green-200: #11ca93;
     --green-300: #34bd78;
@@ -14,43 +15,50 @@
     --green-500: #00875f;
   
 }
-.Post{
+
+/* .mainn{
   display: flex;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-}
-
- .search{
- margin:0;
- margin-top: 10px;
- display: flex;
- justify-content: flex-start;
-
- } 
- input{
+} */
+.search{
   margin:0;
-  max-width: 100%;
+  margin-top: 10px;
+  
+  
+} 
+.body{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
  }
- button{
+ input{
   padding: 8px;
   margin-left: 14px;
   margin-right: 8px;
-  background-color: var(--green-200);
+  background-color: var(--gray-100);
   border-radius: 8px;
-  border: none;
+  border: 1px solid black;
   color: rgb(0, 0, 0);
   font-weight: bolder;
  }
+ button{
+  padding: 8px;
+     margin-left: 14px;
+     margin-right: 8px;
+     
+     border-radius: 8px;
+     border: 1px solid black;
+     color: rgb(0, 0, 0);
+     font-weight: bolder;
+}
 
- .main{
-
- }
  .containerPost{
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin-bottom: 22px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  display: flex;
-  width: 55rem;
+  width: 380px;
   height: 400px;
   border:solid 2px var(--gray-300);
   border-radius: 9px;

@@ -10,7 +10,7 @@ export function Menu(){
             <div className={styles.menu}>
               <Button  nome="Cliente"/>
             </div>
-            <div>
+            <div className={styles.menu}>
               <Button  nome="Nova Os"/>
 
             </div>
