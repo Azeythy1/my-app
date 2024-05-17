@@ -12,7 +12,7 @@ function App() {
 
     <div className='main'>
       <Menu/>
-    <div className="body">
+    <div className="search">
       <button onClick={''}>Pesquisar</button>
       <input type="search" placeholder='Pesquisa rápida'/>  
     </div>
@@ -30,6 +30,17 @@ function App() {
 
     </div>
         <div className='containerPost'>
+          <Card 
+          id="1"
+          data={Date()}
+          nome='Flavia Ribeiro'
+          conteudo="Note 8 pro 64gb+6gb"
+          valor="R$750,00" 
+          pagamento="PIX"
+          status="Pago"/>
+
+        </div>
+        <div className='containerPost'>
         <Card 
           id="1"
           data={Date()}
@@ -40,6 +51,18 @@ function App() {
           status="Pago"/>
 
     </div>
+        <div className='containerPost'>
+          <Card 
+          id="1"
+          data={Date()}
+          nome='Flavia Ribeiro'
+          conteudo="Note 8 pro 64gb+6gb"
+          valor="R$750,00" 
+          pagamento="PIX"
+          status="Pago"/>
+
+        </div>
+    
     </div>
  
     </div>
