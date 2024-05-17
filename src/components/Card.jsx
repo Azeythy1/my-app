@@ -5,7 +5,7 @@ export function Card(dados){
         <>
         <div className={styles.Card}>
             <span className={styles.icons}></span>
-            <p className={styles.id}>Nº Venda :{" "} <strong>{dados.id}</strong></p>
+            <p className={styles.id}>O. S  Nº :{" "} <strong>{dados.id}</strong></p>
             <br />
             <p><strong>Data: </strong> {dados.data}</p>
             <h3> <strong>Cliente: </strong> {dados.nome}</h3>

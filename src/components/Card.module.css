@@ -30,7 +30,7 @@ font-size: x-large;
 }
 .Card h3{
     margin: 0 4PX;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: var(--green-400);
     
 }
