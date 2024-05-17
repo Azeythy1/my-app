@@ -1,49 +1,36 @@
-.nome{ 
+.Card{
     text-align: center;
+    justify-self: center;
+background-color: rgb(255, 255, 255);
+width: 55rem;
+display: flex;
+flex-direction: column;
+font-size: x-large;
 }
-
-.detalhes{
-    display: flex;
+.Card .icons{
+    margin:  0 4px;
+    width: 54,5rem;
+    height: 32px;
+    background-color: aquamarine;
+    border-radius: 9px;
+    border: 1px solid black;
 }
-h4{
-    margin-right: 4px;
+.Card .id{
+    font-size: xx-large;
+    border: double var(--green-500);
 }
-p{
-    margin-left: 8px;
-    margin-right: 8px;
-}
-.preco{
-    color: aliceblue;
-    margin: 8px;
-    background-color: rgb(48, 45, 45);
-}
-.cardPreco{
-    display: flex;
-    justify-content: end;
-}
-.cardStatus{
-    display: flex;
-    justify-content: space-between;
-
+.Card p{
     
-} 
-.title{
-color: aliceblue;
-}    
-.card{
+    background-color:var(--green-100);
+    color: black;
+    text-align: center;
+    margin:4px;
+    border: double var(--green-500);
     
-    display: block;
-    border: black;
-    border-style: double;
-    margin: 14px;
-    max-width: 260px;
-    max-height: 450px;
-    background-color:rgb(253, 228, 0);
-    color: rgb(0, 0, 0);
-
 }
-
-.Dnome{
-    width: 480px;
-    background-color: var(--gray-200);
+.Card h3{
+    margin: 0 4PX;
+    color: black;
+    background-color: var(--green-400);
+    
 }

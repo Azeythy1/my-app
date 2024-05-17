@@ -4,9 +4,15 @@ export function Card(dados){
     return(
         <>
         <div className={styles.Card}>
-            <h3 className='Dnome'>{dados.nome}</h3>
-            <p>{dados.id}</p>
-            <p className='Dconteudo'>{dados.conteudo}</p>
+            <span className={styles.icons}></span>
+            <p className={styles.id}>Nº Venda :{" "} <strong>{dados.id}</strong></p>
+            <br />
+            <p><strong>Data: </strong> {dados.data}</p>
+            <h3> <strong>Cliente: </strong> {dados.nome}</h3>
+            <p> <strong>Aparelho: </strong> {dados.conteudo}</p>
+            <p><strong>Valor: </strong> {dados.valor}</p>
+            <p><strong>Pagamento: </strong> {dados.pagamento},</p>
+            <p><strong>Status: </strong> {dados.status}</p>
           </div>  
         </>
     )

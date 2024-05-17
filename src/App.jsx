@@ -3,7 +3,7 @@ import'./App.css'
 import { Header } from './components/Header'
 import { Menu } from './components/Menu'
 import { Card } from './components/Card'
-import CheckList from './components/CheckList'
+// import CheckList from './components/CheckList'
 function App() {
   
   return (
@@ -11,34 +11,39 @@ function App() {
     <Header/>
 
     <div className='main'>
-
-    <Menu/>
+      <Menu/>
     <div className="body">
-     
       <button onClick={''}>Pesquisar</button>
-      <input type="search" />
-      
-      
-        
-          
-      
+      <input type="search" placeholder='Pesquisa rápida'/>  
     </div>
-    <div className='container'>
-      <CheckList/>  
+    <div className="Post">
 
-      <button >Atualizar</button>
-
-    
-
-    </div>
-<div className='containerPost'>
+    <div className='containerPost'>
         <Card 
-nome='Rober'
-conteudo="Não acho isso legal"/>
+          id="1"
+          data={Date()}
+          nome='Flavia Ribeiro'
+          conteudo="Note 8 pro 64gb+6gb"
+          valor="R$750,00" 
+          pagamento="PIX"
+          status="Pago"/>
 
-</div>
-  </div>
     </div>
+        <div className='containerPost'>
+        <Card 
+          id="1"
+          data={Date()}
+          nome='Flavia Ribeiro'
+          conteudo="Note 8 pro 64gb+6gb"
+          valor="R$750,00" 
+          pagamento="PIX"
+          status="Pago"/>
+
+    </div>
+    </div>
+ 
+    </div>
+  </div>
     )
 }
 
