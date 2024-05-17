@@ -16,7 +16,7 @@ function App() {
       <button onClick={''}>Pesquisar</button>
       <input type="search" placeholder='Pesquisa rápida'/>  
     </div>
-    <div className="Post">
+    <div className="body">
 
     <div className='containerPost'>
         <Card 
