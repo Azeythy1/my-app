@@ -2,6 +2,8 @@ import { Button } from './Button'
 import styles from './Menu.module.css' 
 
 export function Menu(){
+ 
+
     return(
 
         <>
@@ -10,7 +12,7 @@ export function Menu(){
             <div className={styles.menu}>
               <Button  nome="Cliente"/>
             </div>
-            <div>
+            <div className={styles.menu}>
               <Button  nome="Nova Os"/>
 
             </div>
