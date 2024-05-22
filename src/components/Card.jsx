@@ -1,10 +1,16 @@
 import styles from './Card.module.css'
 
 export function Card(dados){
+//cliente:{id, Nome, }
+
     return(
         <>
         <div className={styles.Card}>
-            <span className={styles.icons}></span>
+            <span className={styles.icons}>
+                <button className={styles.btnBarra}>Edit</button>
+                <button className={styles.btnBarra}>Save</button>
+                <button className={styles.btnBarra}>Print</button>
+            </span>
             <p className={styles.id}>O. S  Nº :{" "} <strong>{dados.id}</strong></p>
             <br />
             <p><strong>Data: </strong> {dados.data}</p>
