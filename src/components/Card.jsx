@@ -1,7 +1,8 @@
 import styles from './Card.module.css'
-
+// import {useForm} from "react-hook-form";
 export function Card(dados){
-//cliente:{id, Nome, }
+    // const {register} = useForm();
+    // const onSubmit = ( ) =>{};
 
     return(
         <>
@@ -12,14 +13,14 @@ export function Card(dados){
                 <button className={styles.btnBarra}>Print</button>
             </span>
             <p className={styles.id}>O. S  Nº :{" "} <strong>{dados.id}</strong></p>
-            <br />
+                <br />
             <p><strong>Data: </strong> {dados.data}</p>
-            <h3> <strong>Cliente: </strong> {dados.nome}</h3>
+                <h3> <strong>Cliente: </strong> {dados.nome}</h3>
             <p> <strong>Aparelho: </strong> {dados.conteudo}</p>
             <p><strong>Valor: </strong> {dados.valor}</p>
             <p><strong>Pagamento: </strong> {dados.pagamento},</p>
             <p><strong>Status: </strong> {dados.status}</p>
-          </div>  
+        </div>  
         </>
     )
 }
