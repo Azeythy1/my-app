@@ -84,3 +84,40 @@ button:hover{
 }
   
  }
+
+ .container{
+  display: block;
+  margin: 30PX auto;
+
+  
+  
+ }
+ .content{
+  background-color: #c4868618;
+  
+
+ }
+ .Post{ 
+  margin-top: 32px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 380px;
+  height: 600px;
+  border:solid 2px var(--gray-700);
+  border-radius: 9px;
+  background-color:#ffffff;
+  color: #121214;
+  align-items: center;
+  
+}
+.content input{
+  width: 100%;
+  margin: 10px;
+  border: none;
+  box-shadow: #11ca93 -0.5px -0.5px 0.2px 2px;
+  color: #ffffff;
+  background-color: #193628;
+  text-transform: uppercase;
+}

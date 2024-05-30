@@ -2,11 +2,13 @@ import {React} from 'react'
 import {Header} from '../components/Header'
 import {Menu} from '../components/Menu'
 
+
+
 function Home() {
     return (
       <div>
-             <Header/>   
-    <Menu/> 
+        <Header/>   
+        <Menu/> 
          
   
       </div>

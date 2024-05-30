@@ -3,18 +3,15 @@ import'./App.css'
 import { Header } from './components/Header'
 import { Menu } from './components/Menu'
 import { Card } from './components/Card'
+import { Pesquisa } from './components/Pesquisa'
 
 function App() {
   
   return (
   <div className='mainn'>
     <Header/>
-
-      <Menu/>
-    <div className="search">
-      <button onClick={''}>Pesquisar</button>
-      <input type="search" placeholder='Pesquisa rápida'/>  
-    </div>
+    <Menu/>
+    <Pesquisa/>
     
     <div className="body">
 
