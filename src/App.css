@@ -68,7 +68,7 @@ button:hover{
   margin-top: 32px;
   margin-bottom: 22px;
   display: flex;
-  width: 380px;
+  width: 400px;
   height: 400px;
   border:solid 2px var(--gray-300);
   border-radius: 9px;
@@ -88,6 +88,7 @@ button:hover{
  .container{
   display: block;
   margin: 30PX auto;
+  width: 344px;
 
   
   
