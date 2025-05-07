@@ -1,5 +1,4 @@
-import {React} from 'react'
-import {Header} from '../components/Header'
+
 import {Menu} from '../components/Menu'
 import { Pesquisa } from '../components/Pesquisa'
 
@@ -8,7 +7,7 @@ import { Pesquisa } from '../components/Pesquisa'
 function Cliente() {
     return (
       <div className='mainn'>
-        <Header/>   
+      
         <Menu/> 
         <Pesquisa/>
         <body className='body'>

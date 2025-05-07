@@ -1,47 +1,80 @@
-.Card{
-    text-align: center;
-    justify-self: center;
-background-color: rgb(255, 255, 255);
-width: 100%;
-height: 430px;
-display: flex;
-flex-direction: column;
-font-size: x-large;
-border-radius: 9px;
-}
-.Card .icons{
-    margin:   4px;
-    width: 54,5rem;
-    height: 32px;
-    background-color: rgb(30, 207, 148);
-    border-radius: 9px;
-    border: 1px solid black;
-    
-   
-}
-.Card .id{
-    font-size: xx-large;
-    border: double var(--green-500);
-}
-.Card p{
-    
-    background-color:var(--green-100);
-    color: black;
-    text-align: center;
-    margin:4px;
-    border: double var(--green-500);
-    
-}
-.Card h3{
-    margin: 0 4PX;
-    color: rgb(255, 255, 255);
-    background-color: var(--green-400);
-    
-}
-.btnBarra{
-    text-align: center;
-    width: 3.5rem;
-    height: 100%;
-    
-
-}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cardTitle {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .actionBtn {
+    background: none;
+    border: none;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .actionBtn:hover {
+    color: #3498db;
+  }
+  
+  .infoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .infoItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .infoLabel {
+    color: #7f8c8d;
+    font-weight: 500;
+  }
+  
+  .infoValue {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .pago {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .pendente {
+    background: #fff3e0;
+    color: #f57c00;
+  }
