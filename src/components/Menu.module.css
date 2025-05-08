@@ -1,89 +1,101 @@
 .navContainer {
-   width: 250px;
-   height: 100vh;
-   position: fixed;
-   background: linear-gradient(145deg, #2c3e50, #3498db);
-   padding: 2rem 1rem;
-   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
-   z-index: 1000;
- }
- 
- .menuList {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   gap: 0.8rem;
- }
- 
- .navLink {
-   color: #ecf0f1;
-   text-decoration: none;
-   font-size: 1rem;
-   font-weight: 500;
-   padding: 0.8rem 1.2rem;
-   border-radius: 6px;
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-   transition: all 0.3s ease;
- }
- 
- .navLink:hover {
-   background: rgba(255, 255, 255, 0.15);
-   transform: translateX(5px);
- }
- 
- .activeLink {
-   background: rgba(255, 255, 255, 0.25);
-   position: relative;
- }
- 
- .activeLink::after {
-   content: '';
-   position: absolute;
-   left: 0;
-   top: 50%;
-   transform: translateY(-50%);
-   height: 60%;
-   width: 4px;
-   background: #e74c3c;
-   border-radius: 0 4px 4px 0;
- }
- 
- /* Ícones (usando react-icons) */
- .icon {
-   font-size: 1.2rem;
-   min-width: 25px;
- }
- 
- /* Responsivo */
- @media (max-width: 768px) {
-   .navContainer {
-     width: 100%;
-     height: auto;
-     position: relative;
-     padding: 1rem;
-   }
-   
-   .menuList {
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
-   }
-   
-   .navLink {
-     padding: 0.6rem 1rem;
-   }
-   
-   .activeLink::after {
-     width: 60%;
-     height: 3px;
-     top: auto;
-     bottom: 0;
-     left: 50%;
-     transform: translateX(-50%);
-     border-radius: 2px;
-   }
- }
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(145deg, #2c3e50, #3498db);
+  padding: 2rem 0; /* Alterado para padding vertical apenas */
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navLink {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem; /* Aumentei o padding horizontal */
+  border-radius: 0 6px 6px 0; /* Bordas apenas do lado direito */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  margin-right: 10px; /* Espaço para a borda ativa */
+}
+
+/* Alinhamento perfeito dos ícones e texto */
+.navLink span {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.icon {
+  font-size: 1.1rem;
+  min-width: 24px; /* Largura fixa para alinhamento */
+  text-align: center; /* Centraliza o ícone */
+  margin-right: 5px; /* Espaço entre ícone e texto */
+}
+
+/* Restante do CSS permanece igual */
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.activeLink {
+  background: rgba(255, 255, 255, 0.25);
+  position: relative;
+}
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 4px;
+  background: #e74c3c;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .menuList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  
+  .navLink {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-right: 0;
+  }
+  
+  .activeLink::after {
+    width: 100%;
+    height: 3px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+  }
+}
