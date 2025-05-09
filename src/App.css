@@ -28,3 +28,43 @@ css
     grid-template-columns: 1fr;
   }
 }
+.icon {
+  font-size: 1.1rem;
+  min-width: 24px;
+  text-align: center;
+  margin-right: 5px;
+  color: #ecf0f1; /* Cor branca padrão */
+  transitio/* Adicione isso ao seu App.css */
+body {
+  padding-top: 60px; /* Altura do menu fixo */
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
+}
+
+/* Garante que o ícone não mude de cor em nenhum estado */
+.navLink .icon,
+.navLink:hover .icon,
+.activeLink .icon,
+.activeLink:hover .icon {
+  color: #ecf0f1 !important;
+}
+a{color: #ecf0f1;
+
+}
+
+/* Adicione isso ao seu App.css */
+body {
+  padding-top: 60px; /* Altura do menu fixo */
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 50px;
+  }
+}

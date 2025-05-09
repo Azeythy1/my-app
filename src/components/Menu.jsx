@@ -17,9 +17,10 @@ export function Menu() {
             className={({ isActive }) => 
               isActive ? styles.activeLink : styles.navLink
             }
+            data-tooltip="Home"
           >
             <FaHome className={styles.icon} />
-            <span>Home</span>
+            <span className={styles.textLabel}>Home</span>
           </NavLink>
         </li>
         <li>
@@ -28,9 +29,10 @@ export function Menu() {
             className={({ isActive }) => 
               isActive ? styles.activeLink : styles.navLink
             }
+            data-tooltip="Clientes"
           >
             <FaUsers className={styles.icon} />
-            <span>Clientes</span>
+            <span className={styles.textLabel}>Clientes</span>
           </NavLink>
         </li>
         <li>
@@ -39,9 +41,10 @@ export function Menu() {
             className={({ isActive }) => 
               isActive ? styles.activeLink : styles.navLink
             }
+            data-tooltip="Checklist"
           >
             <FaClipboardCheck className={styles.icon} />
-            <span>Checklist</span>
+            <span className={styles.textLabel}>Checklist</span>
           </NavLink>
         </li>
         <li>
@@ -50,9 +53,10 @@ export function Menu() {
             className={({ isActive }) => 
               isActive ? styles.activeLink : styles.navLink
             }
+            data-tooltip="Conferência"
           >
             <FaHandshake className={styles.icon} />
-            <span>Conferência</span>
+            <span className={styles.textLabel}>Conferência</span>
           </NavLink>
         </li>
       </ul>

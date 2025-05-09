@@ -1,11 +1,13 @@
 .navContainer {
-  width: 250px;
-  height: 100vh;
-  position: fixed;
+  width: 100%;
   background: linear-gradient(145deg, #2c3e50, #3498db);
-  padding: 2rem 0; /* Alterado para padding vertical apenas */
-  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
 
 .menuList {
@@ -13,41 +15,26 @@
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .navLink {
   color: #ecf0f1;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  padding: 0.8rem 1.5rem; /* Aumentei o padding horizontal */
-  border-radius: 0 6px 6px 0; /* Bordas apenas do lado direito */
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
   transition: all 0.3s ease;
-  margin-right: 10px; /* Espaço para a borda ativa */
 }
 
-/* Alinhamento perfeito dos ícones e texto */
-.navLink span {
-  flex: 1;
-  white-space: nowrap;
-}
-
-.icon {
-  font-size: 1.1rem;
-  min-width: 24px; /* Largura fixa para alinhamento */
-  text-align: center; /* Centraliza o ícone */
-  margin-right: 5px; /* Espaço entre ícone e texto */
-}
-
-/* Restante do CSS permanece igual */
 .navLink:hover {
   background: rgba(255, 255, 255, 0.15);
-  transform: translateX(5px);
 }
 
 .activeLink {
@@ -58,44 +45,80 @@
 .activeLink::after {
   content: '';
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 60%;
-  width: 4px;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
   background: #e74c3c;
-  border-radius: 0 4px 4px 0;
+  border-radius: 2px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
+.icon {
+  font-size: 1.1rem;
+}
+
+/* Versão Mobile Compacta */
+@media (max-width: 600px) {
   .navContainer {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 1rem;
+    padding: 0.6rem 0.5rem;
+    justify-content: space-around;
   }
   
   .menuList {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.3rem;
+    gap: 0;
+    justify-content: space-around;
   }
   
   .navLink {
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    margin-right: 0;
+    padding: 0.6rem 0.8rem;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.7rem;
+  }
+  
+  .icon {
+    font-size: 1.3rem;
   }
   
   .activeLink::after {
-    width: 100%;
-    height: 3px;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    transform: none;
-    border-radius: 0;
+    bottom: -5px;
+    width: 80%;
+  }
+}
+
+/* Tooltip para ícones (opcional) */
+.navLink .text-label {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 400px) {
+  .navLink .text-label {
+    display: none;
+  }
+  
+  .navLink {
+    padding: 0.8rem;
+  }
+  
+  .navLink::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c3e50;
+    color: rgb(255, 255, 255);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navLink:hover::after {
+    opacity: 1;
   }
 }
